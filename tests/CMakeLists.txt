@@ -1,7 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
 
-list(APPEND CMAKE_PREFIX_PATH "C:/msys64/mingw64")
-
 find_package(Qt6 REQUIRED Core)
 find_package(Catch2 CONFIG REQUIRED)
 

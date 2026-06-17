@@ -26,6 +26,7 @@ qt_add_executable(appsort_visualizer
 
 qt_add_qml_module(appsort_visualizer
     URI sort_visualizer
+    VERSION 1.0
     QML_FILES
         qml/Main.qml
     SOURCES
@@ -35,6 +36,13 @@ qt_add_qml_module(appsort_visualizer
         src/MergeSort.cpp
         src/QuickSort.cpp
         src/SortingController.cpp
+        RESOURCES README.md
+)
+
+qt_add_resources(appsort_visualizer "qml_resources"
+    PREFIX "/"
+    FILES
+        qml/Main.qml
 )
 
 target_include_directories(appsort_visualizer PRIVATE

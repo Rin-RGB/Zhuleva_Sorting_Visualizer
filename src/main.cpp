@@ -30,9 +30,7 @@ int main(int argc, char *argv[])
         []() { QCoreApplication::exit(-1); },
         Qt::QueuedConnection);
 
-    engine.loadFromModule(
-        "sort_visualizer",
-        "Main");
+    engine.load(QUrl(QStringLiteral("qrc:/qml/Main.qml")));
 
     if (engine.rootObjects().isEmpty()) {
         return -1;
