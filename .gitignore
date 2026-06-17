@@ -1,17 +1,13 @@
-# Папка сборки
 build/
 
-# Файлы Qt Creator
 *.pro.user
 *.pro.user.*
 .DS_Store
 
-# Скомпилированные файлы
 *.o
 *.obj
 *.exe
 *.dll
 
-# IDE
 .qtcreator/
 .vscode/
